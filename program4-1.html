@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html lang="us-eng"></html>
 
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width device, initial scale=1.0">
     <title>CIT 160 Program 4.1-Austin Walker</title>
     <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
-</header>
+</head>
 
 <body>
     <Header>
@@ -20,24 +20,25 @@
 	    <label><button onclick="addNumbers()">Add Numbers</button></label>
 	    <hr>
         <p id="output"></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
         <script>
         function addNumbers() {
-        // INPUT
-        let number1 = document.getElementById("number1").value
-        let number2 = document.getElementById("number2").value
-        // PROCESSING
-        // CONVERT INPUT STRING IN TO NUMBERS USING PARSEFLOAT
-        number1 = parseFloat(number1);
-        number2 = parsefloat(number2);
-        // add the two numbers together put in my output variable
-        let sum = number1 + number2;
+            // INPUT
+            let number1 = document.getElementById("number1").value
+            let number2 = document.getElementById("number2").value
+            // PROCESSING
+            // CONVERT INPUT STRING IN TO NUMBERS USING PARSEFLOAT
+            number1 = parseFloat(number1);
+            number2 = parsefloat(number2);
+            // add the two numbers together put in my output variable
+            let sum = number1 + number2;
 
-        // OUTPUT
-        document.getElementById(output).textContent = sum;    
-        }
+            // OUTPUT
+            document.getElementById(output).textContent = sum;    
+            }
         </script>
-    </main>   
+  
 </body>
-<footer>
-	&copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
-</footer>
