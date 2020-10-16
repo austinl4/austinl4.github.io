@@ -4,7 +4,7 @@ function poundsToKilograms() {
 
     // PROCESSING
     let kilograms = pounds/0.45359237;
-    
+
     // OUTPUTVALUE
     document.getElementById("output").textContent = kilograms.toFixed(1) + " Kilograms";
 }
