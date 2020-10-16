@@ -1,6 +1,6 @@
 function poundsToKilograms() {
     // INPUT VALUE
-    let pounds = parseFloat(document.getElementById("pounds").value);
+    let pounds = parseFloat(document.getElementById("Pounds").value);
 
     // PROCESSING
     let kilograms = pounds/0.45359237;
