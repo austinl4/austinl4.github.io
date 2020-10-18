@@ -37,6 +37,8 @@
             let sum = hours * 15 + overTime * 22.50;
             // calculate gross income
             let gross = sum * 0.85
+            // round
+            let gross = parseInt(gross)
             // OUTPUT
             document.getElementById("output").textContent = gross;    
         }
