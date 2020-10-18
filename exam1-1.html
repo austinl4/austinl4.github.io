@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device, initial scale-1.0">
+    <title>CIT 160 Exam 1-1-Austin Walker</title>
+ 
+</head>
+
+<body>
+    <Header>
+        <h1>Week 5: Exam 1-1</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+        <h3>Calculate Hours</h3>
+        <label>Total Hours: <input type="text" id="hours"></label>
+        <label>Total Overtime: <input type="text" id="overTime"></label>
+        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <hr>
+        <p><span id="pay"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function addNumbers() {
+            // INPUT
+            let hours = document.getElementById("hours").value
+            let overTime = document.getElementById("overTime").value
+            // PROCESSING
+            // CONVERT INPUT STRING IN TO NUMBERS USING PARSEFLOAT
+            hours = parseFloat(hours);
+            overTime = parseFloat(overTime);
+            // calculate net pay
+            let sum = hours * 15 + overTime * 22.50;
+            // calculate gross income
+            let gross = sum * 0.15
+            // OUTPUT
+            document.getElementById("output").textContent = gross;    
+        }
+    </script>
+</body>
+</html>
