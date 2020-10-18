@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device, initial scale-1.0">
+    <title>CIT 160 Exam 1-1-Austin Walker</title>
+ 
+</head>
+
+<body>
+    <Header>
+        <h1>Week 5: Exam 1-1</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+        <h3>Calculate Hours</h3>
+        <label>Radius: <input type="text" id="radius"></label>
+        <label>Height: <input type="text" id="height"></label>
+        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function addNumbers() {
+            // INPUT
+            let hours = document.getElementById("radius").value
+            let overTime = document.getElementById("height").value
+            // PROCESSING
+            // CONVERT INPUT STRING IN TO NUMBERS USING PARSEFLOAT
+            radius = parseFloat(radius);
+            height = parseFloat(height);
+            // calculate area
+            let sum = radius * height * 3.14;
+            // OUTPUT
+            document.getElementById("output").textContent = sum;    
+        }
+    </script>
+</body>
+</html>
