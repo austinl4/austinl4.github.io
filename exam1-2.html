@@ -34,7 +34,7 @@
             radius = parseFloat(radius);
             height = parseFloat(height);
             // calculate area
-            let sum = radius * height * 3.14;
+            let sum = 3.14 * (radius**2) * height ;
             // OUTPUT
             document.getElementById("output").textContent = "Volume: " + sum;    
         }
