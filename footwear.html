@@ -34,15 +34,15 @@
     </footer>
     <script>
         function getShoes() {
-            let shoes;
             //input from the combo box
             let weather = document.getElementById("weather").value;
+            console.log("weather")
             //processing
-            if ("weather" === "snow") {
+            if ("weather" == "snow") {
                 shoes = " boots"
-            } else if ("weather" === "rain") {
+            } else if ("weather" == "rain") {
                 shoes = " galoshes"
-            } else if ("weather" === "hot") {
+            } else if ("weather" == "hot") {
                 shoes = " sandals"
             } else {
                 shoes = ""
