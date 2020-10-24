@@ -36,7 +36,8 @@
         function getShoes() {
             //input from the combo box
             let weather = document.getElementById("weather").value;
-            console.log(weather)
+            console.log(weather);
+            let shoes = "";
             //processing
             if (weather == "snow") {
                 shoes = "boots"
@@ -47,6 +48,7 @@
             } else {
                 shoes = ""
             }
+            document.getElementById("output").textContent=shoes;
         }
     </script>
 </body>
