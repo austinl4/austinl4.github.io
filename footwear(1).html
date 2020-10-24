@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width device, initial scale-1.0">
+    <title>CIT 160 Program 3.1-Austin Walker</title>
+    <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
+</head>
+
+<body>
+    <Header>
+        <h1>Week 3: Template</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+        <h3>Add Two Numbers</h3>
+        <label>Please Enter Sales Total: <input type="text" id="salestotal"></label>
+        <label><button onclick="computeCommission()">Get Commission</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</body>
+
+<script>
+function computeCommission() {
+    let sales = parseFloat(document.getElementById('salestotal').value);
+        let rate;
+        // if (sales < 300) {
+        //     rate = 0;
+        // }
+        // else if (sales < 600) {
+        //     rate = 0.02;
+        // }
+        // else if (sales < 1000) {
+        //     rate = 0.025;
+        // }
+        // else {
+        //     rate = 0.03;
+        // }
+
+        switch(expression) {
+            case x:
+            // code block
+            break;
+            case y:
+            // code block
+            break;
+            default:
+    // code block
+}
+        let commission = sales * rate;
+        let output = 'The employee earned ' + commission;
+        document.getElementById('output').innerHTML = output;
+}
+    </script>
+</html>

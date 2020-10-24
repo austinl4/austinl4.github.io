@@ -15,46 +15,36 @@
     </Header>
     <main>
         <h3>Add Two Numbers</h3>
-        <label>Please Enter Sales Total: <input type="text" id="salestotal"></label>
-        <label><button onclick="computeCommission()">Get Commission</button></label>
+        <label for="pet-select">Choose a pet:</label>
+        <label>
+        <select name="pets" id="pet-select">
+            <option value=""disable selected>--Select the Weather--</option>
+            <option value="snow">snow</option>
+            <option value="rain">rain</option>
+            <option value="hot">hot</option>
+            <option value="unknown">unknown</option>
+        </select></label>
+        <label><button onclick="getShoes()">Get Shoes</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
     <footer>
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
-</body>
-
-<script>
-function computeCommission() {
-    let sales = parseFloat(document.getElementById('salestotal').value);
-        let rate;
-        // if (sales < 300) {
-        //     rate = 0;
-        // }
-        // else if (sales < 600) {
-        //     rate = 0.02;
-        // }
-        // else if (sales < 1000) {
-        //     rate = 0.025;
-        // }
-        // else {
-        //     rate = 0.03;
-        // }
-
-        switch(expression) {
-  case x:
-    // code block
-    break;
-  case y:
-    // code block
-    break;
-  default:
-    // code block
-}
-        let commission = sales * rate;
-        let output = 'The employee earned ' + commission;
-        document.getElementById('output').innerHTML = output;
-}
+    <script>
+        function getShoes {
+            let shoes;
+            //input from the combo box
+            let weather = document.getElementById("weather").value;
+            //processing
+            if ("weather" === "snow") {
+                shoes = " boots"
+            } else if ("weather" === "rain"){
+                shoes = " galoshes"
+            } else ("weather" === "hot") {
+                shoes = " sandals"
+            }
+        }
     </script>
+</body>
 </html>
