@@ -16,7 +16,7 @@
     <main>
         <h3>Add Two Numbers</h3>
         <label>Please Enter Sales Total: <input type="text" id="salestotal"></label>
-        <label><button onclick="computeRate()">Get Commission</button></label>
+        <label><button onclick="computeCommission()">Get Commission</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
@@ -26,21 +26,32 @@
 </body>
 
 <script>
-function computeRate() {
+function computeCommission() {
     let sales = parseFloat(document.getElementById('salestotal').value);
         let rate;
-        if (sales < 300) {
-            rate = 0;
-        }
-        else if (sales < 600) {
-            rate = 0.02;
-        }
-        else if (sales < 1000) {
-            rate = 0.025;
-        }
-        else {
-            rate = 0.03;
-        }
+        // if (sales < 300) {
+        //     rate = 0;
+        // }
+        // else if (sales < 600) {
+        //     rate = 0.02;
+        // }
+        // else if (sales < 1000) {
+        //     rate = 0.025;
+        // }
+        // else {
+        //     rate = 0.03;
+        // }
+
+        switch(expression) {
+  case x:
+    // code block
+    break;
+  case y:
+    // code block
+    break;
+  default:
+    // code block
+}
         let commission = sales * rate;
         let output = 'The employee earned ' + commission;
         document.getElementById('output').innerHTML = output;
