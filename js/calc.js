@@ -12,4 +12,6 @@ switch (operator) {
         answerKey = a / b
         break;
 
+    Boolean answerKey
+
 }

@@ -17,6 +17,16 @@
         <h3>Add Two Numbers</h3>
         <label>Enter Number One: <input type="text" id="number1"></label>
         <label>Enter Number Two: <input type="text" id="number2"></label>
+        <label>
+            <select name="operator" id="">
+                <option value=""disable selected>--Select the Operator--</option>
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="*">*</option>
+                <option value="/">/</option>
+            </select>
+        </label>
+        <label>Enter Answer: <input type="text" id="answer"></label>
         <label><button onclick="addNumbers()">Add Numbers</button></label>
         <hr>
         <p><span id="output"></span></p>
@@ -24,5 +34,6 @@
     <footer>
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
+    <script src="js/calc.js"></script>
 </body>
 </html>
