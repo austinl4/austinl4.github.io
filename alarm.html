@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device width, initial scale-1.0">
+    <title>CIT 160 Program 7.1-Austin Walker</title>
+    <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
+</head>
+
+<body>
+    <Header>
+        <h1>Week 7: Alarm</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+      
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+       var now = new Date();
+        var month = now.getMonth(month);
+        var dayOfMonth = now.getDate(date);
+        var dayOfWeek = now.getDay(weekday);
+        
+        let output = "Wake up!"
+        if (month == 0 && day == 1 || month == 6 && day == 4 || month == 11 && day == 25 || weekday == 0 || weekday == 6) {
+                output = "Sleep in."
+            }
+
+            document.getElementById("output");
+    </script>
+</body>
+
+</html>
