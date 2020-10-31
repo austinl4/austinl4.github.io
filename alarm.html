@@ -21,18 +21,19 @@
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        //get current date
-       var now = new Date();
-        var month = now.getMonth();
-        var dayOfMonth = now.getDate();
-        var dayOfWeek = now.getDay();
-        //process sleeping in
-        let output = "Wake up!"
-        if (month == 0 && dayOfMonth == 1 || month == 6 && dayOfMonth == 4 || month == 11 && dayOfMonth == 25 || dayOfWeek == 0 || dayOfWeek == 6) {
-                output = "Sleep in."
-            }
-        //output to screen
-            document.getElementById("output");
+        function sleeping() {
+                //get current date
+            var now = new Date();
+                var month = now.getMonth();
+                var dayOfMonth = now.getDate();
+                var dayOfWeek = now.getDay();
+                //process sleeping in
+                let output = "Wake up!"
+                if (month == 0 && dayOfMonth == 1 || month == 6 && dayOfMonth == 4 || month == 11 && dayOfMonth == 25 || dayOfWeek == 0 || dayOfWeek == 6) {
+                        output = "Sleep in."
+                    }
+                //output to screen
+                    document.getElementById("output");
     </script>
 </body>
 
