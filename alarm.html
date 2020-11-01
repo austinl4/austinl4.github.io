@@ -26,10 +26,6 @@
                 var month = now.getMonth();
                 var dayOfMonth = now.getDate();
                 var dayOfWeek = now.getDay();
-                //collect data
-                let month = parseFloat(month);
-                let dayOfMonth = parseFloat(dayOfMonth);
-                let dayOfWeek = parseFloat(dayOfWeek);
                 //process sleeping in
                 let output = "Get up!"
                 if (month == 0 && dayOfMonth == 1 || month == 6 && dayOfMonth == 4 || month == 11 && dayOfMonth == 25 || dayOfWeek == 0 || dayOfWeek == 6) {
