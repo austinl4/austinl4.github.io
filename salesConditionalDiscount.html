@@ -18,7 +18,7 @@
         
         <label>Enter Sale: <input type="text" id="sale"></label>
     
-        <label><button onclick="addNumbers()">Add Numbers</button></label>
+        <label><button onclick="calculatSale()">Calculate Price</button></label>
         <hr>
         <p><span id="output"></span></p>
         <p><span id="output"></span></p>
@@ -28,11 +28,13 @@
     </footer>
     <script>
         //processing 
-        let sale = sale
+        
         var dayOfWeek = new Date().getDay();
         if (dayOfWeek = 2 || dayOfWeek = 3) {
             sale = sale * .9
-        } 
+        } else (sale = sale)
+        let sale = sale * .94
+        document.getElementById("output").textContent=sale;
     </script>
 </body>
 </html>

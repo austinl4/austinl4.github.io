@@ -14,29 +14,29 @@
         <h2>Austin Walker</h2>
     </Header>
     <main>
-        <label><button onclick="alarm()">alarm</button></label>
+        <label for="alarm"></label>;
         <p><span id="output"></span></p>
     </main>
     <footer>
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        function alarm() {
+            Boolean(alarm) {
                 //get current date
                 var now = new Date();
                 var month = now.getMonth();
                 var dayOfMonth = now.getDate();
                 var dayOfWeek = now.getDay();
                 //process sleeping in
-                let output = "Get up!"
+                let command = "Get up!"
                 if (month == 0 && dayOfMonth == 1 || month == 6 && dayOfMonth == 4 || month == 11 && dayOfMonth == 25 || dayOfWeek == 0 || dayOfWeek == 6) {
-                        output = "Sleep in."
+                        command = "Sleep in."
                     } else {
-                        output = "Get up!"
+                        command = "Get up!"
                     }
                 //output to screen
-                    document.getElementById("output");
-                }
+                    document.getElementById("output").textContent=command;
+            }
     </script>
 </body>
 
