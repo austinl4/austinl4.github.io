@@ -14,6 +14,11 @@
         <h2>Austin Walker</h2>
     </Header>
     <main>
+        <label 
+        var now = new Date();
+        var month = now.getMonth();
+        var dayOfMonth = now.getDate();
+        var dayOfWeek = now.getDay();></label>
         <label for="alarm"></label>
         <p><span id="output"></span></p>
     </main>
@@ -21,13 +26,13 @@
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-            Boolean(alarm); {
+            
                 //get current date
                 var now = new Date();
                 var month = now.getMonth();
                 var dayOfMonth = now.getDate();
                 var dayOfWeek = now.getDay();
-                //process sleeping in
+            Boolean(alarm); {//process sleeping in
                 let command = "Get up!"
                 if (month == 0 && dayOfMonth == 1 || month == 6 && dayOfMonth == 4 || month == 11 && dayOfMonth == 25 || dayOfWeek == 0 || dayOfWeek == 6) {
                         command = "Sleep in."
