@@ -30,10 +30,10 @@
         //processing 
         
         var dayOfWeek = new Date().getDay();
-        if (dayOfWeek = 2 || dayOfWeek = 3) {
+        switch (dayOfWeek = 2 || dayOfWeek = 3) {
             sale = sale * .9
-        } else (sale = sale)
-        let sale = sale * .94
+        } case (sale = sale)
+        let sale = sale * 1.06
         document.getElementById("output").textContent=sale;
     </script>
 </body>
