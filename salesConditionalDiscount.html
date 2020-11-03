@@ -18,26 +18,27 @@
         
         <label>Enter Sale: <input type="text" id="sale"></label>
     
-        <label><button onclick="calculatSale()">Calculate Price</button></label>
+        <label><button onclick="calculateSale()">Calculate Price</button></label>
         <hr>
-        <p><span id="output"></span></p>
         <p><span id="output"></span></p>
     </main>
     <footer>
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        //grab sales text
-        let sale = parseFloat(document.getElementById("sale").value);
-        //processing 
-        
-        var dayOfWeek = new Date().getDay();
-        if (dayOfWeek == 2 || dayOfWeek == 3) {
-            sale = sale * .9;
-        } else {
-             sale = sale * 1.06;
+        function calculateSale() {
+            //grab sales text
+            let sale = parseFloat(document.getElementById("sale").value);
+            //processing 
+            
+            var dayOfWeek = new Date().getDay();
+            if (dayOfWeek == 2 || dayOfWeek == 3) {
+                sale = sale * .9;
+            } else {
+                sale = sale * 1.06;
+            }
+            document.getElementById("output").textContent=sale;
         }
-        alert(output = "sale");
     </script>
 </body>
 </html>
