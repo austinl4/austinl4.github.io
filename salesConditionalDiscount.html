@@ -27,13 +27,16 @@
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
+        //grab sales text
+        let sale = parseFloat(document.getElementById("sale").value);
         //processing 
         
         var dayOfWeek = new Date().getDay();
-        switch (dayOfWeek = 2 || dayOfWeek = 3) {
-            sale = sale * .9
-        } case (sale = sale)
-        let sale = sale * 1.06;
+        if (dayOfWeek == 2 || dayOfWeek == 3) {
+            sale = sale * .9;
+        } else {
+             sale = sale * 1.06;
+        }
         alert(output = "sale");
     </script>
 </body>
