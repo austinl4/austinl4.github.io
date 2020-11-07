@@ -3,16 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device width, initial scale-1.0">
+    <meta name="viewport" content="width=devic-width, initial-scale=1.0">
     <title>CIT 160 Program 7.2-Austin Walker</title>
     <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
 </head>
 
 <body>
-    <Header>
+    <header>
         <h1>Week 7: Sales Conditional Discount</h1>
         <h2>Austin Walker</h2>
-    </Header>
+    </header>
     <main>
         <h3>Sales Condition Discount</h3>
         
@@ -24,18 +24,16 @@
     </main>
     <footer>
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
-    </footer>
+    </footer>;
     <script>
         function calculateSale() {
             //grab sales text
             let sale = parseFloat(document.getElementById("sale").value);
             //processing 
-            
+            sale = sale * 1.06;
             var dayOfWeek = new Date().getDay();
             if (dayOfWeek == 2 || dayOfWeek == 3) {
                 sale = sale * .9;
-            } else {
-                sale = sale * 1.06;
             }
             document.getElementById("output").textContent=sale;
         }
