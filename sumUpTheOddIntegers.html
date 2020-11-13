@@ -27,11 +27,13 @@
         function addNumbers() {
             let n = document.getElementById("number1").value;
             n = parseFloat(number1)
-            let message;
-            for (let i = 1; i <= "n"; i++) {
-                if (i % 1) {
-                    message = message + i;
+            let message = 0;
+            let i = 1
+            while (i <= n) {
+               if (i%2 == 1) {
+                    message += i
                 }
+                i++
             }
         document.getElementById("output").textContent=message;
         }
