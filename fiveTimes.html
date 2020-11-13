@@ -23,11 +23,14 @@
 	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
     </footer>
     <script>
-        function fiveMultiplicationTables(){
-            let (i=0;i < 9, i++) {
-                output += 5 + "x" + i + "=" + (i*5) "<br>";
+        function fiveMultiplicationTables() {
+            var output=""
+            var i;
+            for (i=0; i < 9; i++) {
+                output += 5 + "x" + i + "=" + (i*5) + "<br>";
+            }
+            document.getElementById('display').textContent = output;
         }
-        document.getElementById('display').textContent = output;
     </script>
 </body>
 </html>
