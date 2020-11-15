@@ -15,8 +15,8 @@
     </Header>
     <main>
         <h3>Boolean</h3>
-        <label>Enter Number One: <input type="text" id="number1"></label>
-        <label>Enter Number Two: <input type="text" id="number2"></label>
+        <label>Enter Number One: <input type="text" id="x"></label>
+        <label>Enter Number Two: <input type="text" id="y"></label>
         <label><button onclick="test()">Test</button></label>
         <hr>
         <p><span id="output"></span></p>
@@ -27,7 +27,8 @@
     <script>
         function test() {
             let output1 = "";
-            let i = 0;
+            let x = document.getElementById("x").value;
+            var y = document.getElementById("y").value   
             if ((x > 5 && y > 5) || x + y >= 20) {
                 output1 == "true"
             } else {
