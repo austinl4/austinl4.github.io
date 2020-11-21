@@ -15,9 +15,9 @@
     </Header>
     <main>
         <h3>Add Two Numbers</h3>
-        <label>Temperature: <input type="text" id="temperature"></label>
-        <label>Wind Speed <input type="text" id="speed"></label>
-        <label><button type = "button" onclick="doInputOutput()">Get Temperature</button></label>
+        <label>Temperature: <input type = "text" id = "temperature"></label>
+        <label>Wind Speed <input type = "text" id="wind"></label>
+        <label><button onclick="doInputOutput()">Get Temperature</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
@@ -26,16 +26,16 @@
     </footer>
     <script>
         function doInputOutput() { 
-            var tempF = parseFloat(document.getElementById(temperature).value);
-            var wind = parseFloat(document.getElementById(wind).value);   
-            var result = windChill(temperature, speed);
-            document.getElementById('output').innerHTML = result;
+            let tempF = parseFloat(document.getElementById(temperature).value);
+            let speed = parseFloat(document.getElementById(wind).value);   
+            let result = windChill(temperature, speed);
+            document.getElementById('output').innerHTML = chill;
         }
         function windChill(tempF, speed) {
             let t = tempF;
             let s = speed;
-            let f =  35.74 + 0.6215*t - 35.75*sMath.pow(0.16) + 0.4275*t*sMath.pow(0.16);
-            return f;    
+            let chill =  35.74 + 0.6215*t - 35.75*Math.pow(s, 0.16) + 0.4275*t*Math.pow(s, 0.16);
+            return chill;    
         }
     </script>
 </body>
