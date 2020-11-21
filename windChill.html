@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>CIT 160 Program 3.1-Austin Walker</title>
+    <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
+</head>
+
+<body>
+    <Header>
+        <h1>Week 3: Windchill</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+        <h3>Add Two Numbers</h3>
+        <label>Temperature: <input type="text" id="temperature"></label>
+        <label>Wind Speed <input type="text" id="speed"></label>
+        <label><button type = "button" onclick="doInputOutput()">Get Temperature</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function doInputOutput() {
+            var temperature = document.getElementById("temperature").value;
+            var wind = document.getElementById("speed").value; 
+            var temperature = parseFloat(document.getElementById(temperature).value);
+            var wind = parseFloat(document.getElementById(wind).value);   
+            var result = windChill(temperature, speed);
+            document.getElementById('output').innerHTML = result;
+        }
+        function windChill(temperature, speed) {
+            let t = temperature;
+            let s = speed;
+            let f =  35.74 + 0.6215*t - 35.75*sMath.pow(0.16) + 0.4275*t*sMath.pow(0.16);
+            return f;    
+        }
+    </script>
+</body>
+</html>
