@@ -16,7 +16,7 @@
     <main>
         <h3>Add Two Numbers</h3>
         <label>Temperature: <input type = "text" id = "temperature"></label>
-        <label>Wind Speed <input type = "text" id="wind"></label>
+        <label>Wind Speed: <input type = "text" id="wind"></label>
         <label><button onclick="doInputOutput()">Get Temperature</button></label>
         <hr>
         <p><span id="output"></span></p>
@@ -28,7 +28,7 @@
         function doInputOutput() { 
             let tempF = parseFloat(document.getElementById(temperature).value);
             let speed = parseFloat(document.getElementById(wind).value);   
-            let result = windChill(temperature, speed);
+            let result = windChill(tempF, speed);
             document.getElementById('output').innerHTML = chill;
         }
         function windChill(tempF, speed) {
