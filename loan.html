@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>CIT 160 Program 11.2-Austin Walker</title>
+    <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
+</head>
+
+<body>
+    <Header>
+        <h1>Week 11: Loan Calculator</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+        <h3>Loan Caluculation</h3>
+        <label>Loan Amount <input type="text" id="loan"></label>
+        <label>Interest Rate<input type="text" id="interest"></label>
+        <label>Number of Payment Paid to Date<input type="text" id="payment"></label>
+        <label>Periods Per Year<input type="text" id="period"></label>
+        <label><button onclick="addNumbers()">calculate</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+    <script>
+        function doFV() {
+            let loan = parseFloat(document.getElementById(loan).value);
+            let interest = parseFloat(document.getElementById(interest).value);
+            let period = parseFloat(document.getElementById(period).value);
+            let payment = parseFloat(document.getElementById(payment).value);
+            let factor = computeFutureValue(loan, interest, payment, period)
+            document.getElementById('output').innerHTML = factor;
+        }
+        function computePayment (principal, annualRate, years, periodsPerYear) {
+            return answer = (principal*annualRate)/math.pow(1 + annualRate, -(years * periodsPerYear));
+        }
+        function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
+            return answer = principal * math.pow(1 + annualRate, numberOfPaymentsPaidToDate)-
+        }
+    </script>
+</body>
+</html>
