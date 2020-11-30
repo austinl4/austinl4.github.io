@@ -32,7 +32,7 @@
             let rate = parseFloat(document.getElementById(rate).value);
             let time = parseFloat(document.getElementById(time).value);
             let period = parseFloat(document.getElementById(period).value);
-            let factor = computeFutureValue(invested, rate, time, period)
+            let factor = computeFutureValue(invested, rate, time, period);
             document.getElementById('output').innerHTML = factor;
         }
         function computeFutureValue(principal, annualRate, years, periodsPerYear) {
