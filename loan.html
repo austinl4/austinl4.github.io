@@ -14,7 +14,7 @@
         <h2>Austin Walker</h2>
     </Header>
     <main>
-        <h3>Loan Caluculation</h3>
+        <h3>Loan Calculation</h3>
         <label>Loan Amount <input type="text" id="loan"></label>
         <label>Interest Rate<input type="text" id="interest"></label>
         <label>Number of Payment Paid to Date<input type="text" id="payment"></label>
@@ -39,7 +39,7 @@
             return answer = (principal*annualRate)/math.pow(1 + annualRate, -(years * periodsPerYear));
         }
         function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
-            return answer = principal * math.pow(1 + annualRate, numberOfPaymentsPaidToDate)-
+            return answer = principal * math.pow(1 + annualRate, numberOfPaymentsPaidToDate);
         }
     </script>
 </body>
