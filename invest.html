@@ -36,7 +36,9 @@
             document.getElementById('output').innerHTML = factor;
         }
         function computeFutureValue(principal, annualRate, years, periodsPerYear) {
-            return answer = principal * Math.pow(1 + annualRate/periodsPerYear, years * periodsPerYear);
+            let answer = principal * Math.pow(1 + annualRate/periodsPerYear, years * periodsPerYear);
+            answer = answer.toFixed(2);
+            return answer;
         }
     </script>
 </body>
