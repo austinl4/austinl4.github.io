@@ -33,8 +33,10 @@
             let interest = parseFloat(document.getElementById(interest).value);
             let period = parseFloat(document.getElementById(period).value);
             let payment = parseFloat(document.getElementById(payment).value);
-            let factor = computeFutureValue(loan, interest, payment, period)
+            let factor = computePayment(loan, interest, period, payment)
+            let message = computePayment(loan, interest, period, payment, paymentNumber)
             document.getElementById('output').innerHTML = factor;
+            document.getElementById('total').innerHTML = message;
         }
         function computePayment (principal, annualRate, years, periodsPerYear) {
             return answer = (principal*annualRate)/Math.pow(1 + annualRate/periodsPerYear, -(years * periodsPerYear));
