@@ -37,10 +37,10 @@
             document.getElementById('output').innerHTML = factor;
         }
         function computePayment (principal, annualRate, years, periodsPerYear) {
-            return answer = (principal*annualRate)/math.pow(1 + annualRate/periodsPerYear, -(years * periodsPerYear));
+            return answer = (principal*annualRate)/Math.pow(1 + annualRate/periodsPerYear, -(years * periodsPerYear));
         }
         function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
-            return answer = principal * math.pow(1 + annualRate, numberOfPaymentsPaidToDate);
+            return answer = principal * Math.pow(1 + annualRate, numberOfPaymentsPaidToDate);
         }
     </script>
 </body>
