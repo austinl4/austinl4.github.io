@@ -19,7 +19,8 @@
         <label>Interest Rate<input type="text" id="interest"></label>
         <label>Number of Payment Paid to Date<input type="text" id="payment"></label>
         <label>Periods Per Year<input type="text" id="period"></label>
-        <label><button onclick="addNumbers()">calculate</button></label>
+        <label><button onclick="computePayment()">Payment</button></label>
+        <label><button onclick="computeBalance()">Balance</button></label>
         <hr>
         <p><span id="output"></span></p>
     </main>
@@ -36,7 +37,7 @@
             document.getElementById('output').innerHTML = factor;
         }
         function computePayment (principal, annualRate, years, periodsPerYear) {
-            return answer = (principal*annualRate)/math.pow(1 + annualRate, -(years * periodsPerYear));
+            return answer = (principal*annualRate)/math.pow(1 + annualRate/periodsPerYear, -(years * periodsPerYear));
         }
         function computeBalance (principal, annualRate, years, periodsPerYear, numberOfPaymentPaidToDate) {
             return answer = principal * math.pow(1 + annualRate, numberOfPaymentsPaidToDate);
