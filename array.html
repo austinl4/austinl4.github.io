@@ -57,9 +57,9 @@
         }
         function getMiddle(numbersMid) {
             if (numbersMid.length % 2 == 0) {  
-            return numbersMid[numbersMid.length/2]
+                return numbersMid[(numbersMid.length/2 + ((numbersMid.length/2)+1)) -0.5];
             }
-            return numbersMid[(numbersMid.length/2 + ((numbersMid.length/2)+1)) -0.5];
+            return numbersMid[numbersMid.length/2]
         }
     </script>
 </html>
