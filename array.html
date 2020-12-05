@@ -53,13 +53,13 @@
         }
         function addEnds(numbers) {
             
-            return numbers[0] + " " + numbers[numbers.length-1];
+            return numbers[0] + numbers.length-1;
         }
         function getMiddle(numbersMid) {
             if (numbersMid.length % 2 == 0) {  
             return numbersMid[0]
             }
-        return numbersMid[numbersMid.length/2 -0.5];
+        return numbersMid[(numbersMid+numbersMid-1)/2 -0.5];
         }
     </script>
 </html>
