@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="us-eng"></html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <title>CIT 160 Program 13.1-Austin Walker</title>
+    <link rel="stylesheet" href="css/style.css"><!--external CSS reference-->
+</head>
+
+<body>
+    <Header>
+        <h1>Week 13: Two More Functions That Use Arrays</h1>
+        <h2>Austin Walker</h2>
+    </Header>
+    <main>
+        <h3>Compute Array</h3>
+        <label><button onclick="test()">Compute Array</button></label>
+        <hr>
+        <p><span id="output"></span></p>
+    </main>
+    <footer>
+	    &copy;2020 &bull; Austin Walker &bull; BYU-Idaho &bull; CIT 160
+    </footer>
+</body>
+    <script>
+        /* Defining Table
+ * Input: no user input
+ * Processing: Test the countEvens and multiply functions by calling them.
+ * Output: The values returned from the countEvens and multiply functions.
+ */
+function test() {
+    let list1 = [ 17, 8, 9, 5, 20 ];
+    let list2 = [ 12, 4, 8, 15, 17, 5, 20, 11 ];
+
+    // Test the countEvens function by calling it two times.
+    let count1 = countEvens(list1);
+    let count2 = countEvens(list2);
+
+    // Test the multiply function by calling it two times.
+    let mult1 = multiply(list1, 3);
+    let mult2 = multiply(list2, 4);
+
+    // Build a string to display to the user.
+    let output =
+            count1 + '<br>' +
+            count2 + '<br>' +
+            mult1 + '<br>' +
+            mult2;
+
+    
+            // Display the output string for the user to see.
+            document.getElementById('output').innerHTML = output;
+        }
+        function countEvens(list) {
+            var count = countEvens(list);
+            var i = 0;
+            if (numbers[i] % 2 == 0, i++);
+            return count;
+        }
+        function multiply(list, multiplier) {
+            var products = multiply(list, 3);
+            if (numbersMid.length % 2 == 0) {  
+            
+            }
+            return numbersMid[numbersMid.length/2 - 0.5]
+        }
+    </script>
+</html>
